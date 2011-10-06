@@ -8,7 +8,9 @@ gem 'rails', '3.1.0'
 gem 'sqlite3'
 
 group :development do
+  gem 'turn', :require => false
   gem 'rspec-rails'
+  gem 'spork', '0.8.4'
   gem 'webrat'
 end
 
@@ -38,4 +40,9 @@ group :test do
   gem 'rspec-rails'
   gem 'spork', '0.8.4'
   gem 'webrat'
+end
+
+group :production do
+  gem 'therubyracer-heroku', '0.8.1.pre3'
+  gem 'pg'
 end
