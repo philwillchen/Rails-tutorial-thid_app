@@ -9,6 +9,7 @@ gem 'sqlite3'
 
 group :development do
   gem 'rspec-rails'
+  gem 'webrat'
 end
 
 
@@ -35,4 +36,6 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
   gem 'rspec-rails'
+  gem 'spork', '0.8.4'
+  gem 'webrat'
 end
