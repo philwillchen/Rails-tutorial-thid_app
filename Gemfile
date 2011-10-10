@@ -45,4 +45,8 @@ end
 group :production do
   gem 'therubyracer-heroku', '0.8.1.pre3'
   gem 'pg'
+  gem 'turn', :require => false
+  gem 'rspec-rails'
+  gem 'spork', '0.8.4'
+  gem 'webrat'
 end
