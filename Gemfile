@@ -12,6 +12,7 @@ group :development do
   gem 'rspec-rails'
   gem 'spork', '0.8.4'
   gem 'webrat'
+  gem 'annotate', '2.4.1.beta1'
 end
 
 
