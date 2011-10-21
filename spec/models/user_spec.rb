@@ -155,7 +155,6 @@ describe User do
         User.authenticate(@attr[:email], @attr[:password]).should == @user
       end
     end
-    
   end
 end
 
