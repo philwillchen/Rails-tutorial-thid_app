@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_filter :authenticate, :only => [:edit, :update]
   
   def show
     @user = User.find(params[:id])
@@ -39,4 +40,10 @@ class UsersController < ApplicationController
   
   def destroy
   end
+  
+  private
+    def authenticate
+#      flash[:notice] = "Please sign in to access this page."
+      deny_access unless signed_in? 
+    end
 end

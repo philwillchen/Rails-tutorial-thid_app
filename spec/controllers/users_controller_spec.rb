@@ -168,7 +168,7 @@ describe UsersController do
         end
         
         it "should have a flash message" do
-          put :update, :id => @user, :user =. @attr
+          put :update, :id => @user, :user => @attr
           flash[:success].should =~ /updated/i
         end
       end
@@ -182,6 +182,12 @@ describe UsersController do
 
     it "should deny access to 'edit'" do
       get :edit, :id => @user
+      response.should redirect_to(signin_path)
+      flash[:notice].should =~ /sign in/i
+    end
+    
+    it "should deny access to update" do
+      put :update, :id => @user, :user => {}
       response.should redirect_to(signin_path)
     end
   end
