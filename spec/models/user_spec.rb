@@ -171,7 +171,10 @@ describe User do
       @user.should_not be_admin
     end
     
-    it "should be convertible to admin"
+    it "should be convertible to admin" do
+      @user.toggle!(:admin)
+      @user.should be_admin
+    end
   end
 end
 
@@ -193,5 +196,6 @@ end
 #  updated_at         :datetime
 #  encrypted_password :string(255)
 #  salt               :string(255)
+#  admin              :boolean         default(FALSE)
 #
 
