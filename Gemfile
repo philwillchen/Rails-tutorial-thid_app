@@ -7,6 +7,7 @@ gem 'rails', '3.1.0'
 
 gem 'sqlite3'
 gem 'gravatar_image_tag'
+gem 'will_paginate'
 
 group :development do
   gem 'turn', :require => false
@@ -14,6 +15,7 @@ group :development do
   gem 'spork', '0.8.4'
   gem 'webrat'
   gem 'annotate', '2.4.1.beta1'
+  gem 'faker'
 end
 
 
