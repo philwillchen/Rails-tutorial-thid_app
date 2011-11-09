@@ -54,4 +54,5 @@ group :production do
   gem 'rspec-rails'
   gem 'spork', '0.8.4'
   gem 'webrat'
+  gem 'faker'
 end
