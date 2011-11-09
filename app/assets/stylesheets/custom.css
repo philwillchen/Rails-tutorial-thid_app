@@ -46,7 +46,7 @@ a:visited {
 
 nav {
 	float: right;
-	background: white;
+	background: #fff;
 	padding: 0 0.7em;
 	white-space: nowrap;
 }
@@ -200,7 +200,7 @@ table.microposts {
 }
 
 table.microposts tr {
-  height: 70px;
+  height: 50px;
 }
 
 table.microposts tr td.gravatar {
@@ -210,15 +210,24 @@ table.microposts tr td.gravatar {
 }
 
 table.microposts tr td.micropost {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #fff;
   vertical-align: top;
   padding-top: 10px;
+  background: #fff;
 }
 
 table.microposts tr td.micropost span.timestamp {
   display: block;
   font-size: 85%;
   color: #666;
+  background: #fff;
+}
+
+table.microposts tr td.micropostdelete {
+  display: block;
+  font-size: 85%;
+  color: #666;
+  background: #fff;
 }
 
 div.user_info img {
@@ -235,13 +244,16 @@ div.user_info span.user_name {
 
 div.user_info span.microposts {
   font-size: 80%;
+  background: #fff;
 }
 
 form.new_micropost {
   margin-bottom: 2em;
+  background: #fff
 }
 
 form.new_micropost textarea {
   height: 4em;
   margin-bottom: 0;
+  background: #fff
 }

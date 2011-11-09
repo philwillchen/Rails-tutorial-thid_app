@@ -250,6 +250,11 @@ describe UsersController do
           @user.encrypted_password.should == user.encrypted_password
         end
         
+        it "should redirect to the user show page" do
+          put :update, :id => @user, :user => @attr
+          response.should redirect_to(user_path(@user))
+        end
+        
         it "should have a flash message" do
           put :update, :id => @user, :user => @attr
           flash[:success].should =~ /updated/i
