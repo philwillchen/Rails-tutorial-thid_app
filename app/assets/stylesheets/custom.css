@@ -223,9 +223,29 @@ table.microposts tr td.micropost span.timestamp {
   background: #fff;
 }
 
-table.microposts tr td.micropostdelete {
+/* front page */
+table.front tr td.micropost span.timestamp {
   display: block;
   font-size: 85%;
+  color: #666;
+  background: #fff;
+}
+
+table.front tr td.micropost {
+  border-top: 1px solid #fff;
+  vertical-align: top;
+  padding-top: 10px;
+  background: #fff;
+}
+
+table.front tr td.gravatar {
+  vertical-align: top;
+  width: 50px;
+  background: #fff;
+}
+
+table.microposts tr td.micropostdelete {
+  display: block;
   color: #666;
   background: #fff;
 }
