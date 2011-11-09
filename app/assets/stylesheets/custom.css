@@ -244,6 +244,12 @@ table.front tr td.gravatar {
   background: #fff;
 }
 
+table.front tr td.micropostdelete {
+  display: block;
+  color: #666;
+  background: #fff;
+}
+
 table.microposts tr td.micropostdelete {
   display: block;
   color: #666;
